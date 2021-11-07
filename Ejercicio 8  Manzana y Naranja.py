@@ -25,8 +25,8 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     for naranja in oranges:
         if(b+naranja>=s and b+naranja<=t):
             naranjasdentro+=1
-    print("Han caido" + manzanasdentro + "manzanas dentro")
-    print("Han caido" + naranjasdentro + "naranjas dentro")
+    print("Han caido " + str(manzanasdentro) + " manzanas dentro")
+    print("Han caido " + str(naranjasdentro) + " naranjas dentro")
 
 if __name__ == '__main__':
     first_multiple_input = input().rstrip().split()
@@ -36,6 +36,7 @@ if __name__ == '__main__':
     t = int(first_multiple_input[1])
 
     second_multiple_input = input().rstrip().split()
+
 
     a = int(second_multiple_input[0])
 

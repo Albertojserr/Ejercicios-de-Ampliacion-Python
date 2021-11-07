@@ -19,7 +19,7 @@ def gradingStudents(grades):
 
 def finalgrade(grades):
     roundgrade=0
-    if(grades<=37):
+    if(grades<40):
         roundgrade=grades
     else:
         cociente=int(grades/5 + 1)
@@ -32,12 +32,13 @@ def finalgrade(grades):
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'] + "solucion7.txt", 'w')
-
+    print("Número de estudiantes")
     grades_count = int(input().strip())
 
     grades = []
 
     for _ in range(grades_count):
+        print("Nota de cada estudiante")
         grades_item = int(input().strip())
         grades.append(grades_item)
 
